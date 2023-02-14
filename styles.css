@@ -84,7 +84,7 @@ main {
   font-family: var(--ff_Lex);
   font-weight: 400;
   font-size: 0.9375rem;
-  margin-top: var(--25px);
+  margin: var(--25px) var(--25px) 0 var(--25px);
 }
 
 h1 {
