@@ -99,7 +99,7 @@ h1 {
 }
 
 .card svg,
-h1 {
+h2 {
   margin-bottom: var(--25px);
   font-size: 2.5rem;
   text-transform: uppercase;
