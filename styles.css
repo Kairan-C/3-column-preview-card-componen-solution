@@ -62,7 +62,7 @@ ul {
 }
 
 input,
-button,
+.card_btn,
 textarea,
 select {
   font: inherit;
@@ -87,6 +87,9 @@ main {
   margin-top: var(--25px);
 }
 
+h1 {
+  display: none;
+}
 /* Cards */
 .card {
   display: flex;
@@ -114,46 +117,49 @@ h1 {
 
 .card_btn {
   padding: var(--10px);
-  width: 70%;
-  border: 2px solid var(--Transparent_white);
+  max-width: 150px;
+  text-align: center;
+  border: 2px solid var(--Very_light_gray);
   border-radius: 3.75rem;
   cursor: pointer;
-}
-
-.card_btn:hover {
-  color: var(--Transparent_white);
 }
 
 .card_1 {
   background-color: var(--Bright_orange);
   border-radius: var(--10px) 0 0 var(--10px);
 }
-.card_1 button {
+.card_1 .card_btn {
+  background-color: var(--Very_light_gray);
   color: var(--Bright_orange);
 }
-.card_1 button:hover {
+.card_1 .card_btn:hover {
   background-color: var(--Bright_orange);
+  color: var(--Very_light_gray);
 }
 
 .card_2 {
   background-color: var(--Dark_cyan);
 }
-.card_2 button {
+.card_2 .card_btn {
+  background-color: var(--Very_light_gray);
   color: var(--Dark_cyan);
 }
-.card_2 button:hover {
+.card_2 .card_btn:hover {
   background-color: var(--Dark_cyan);
+  color: var(--Very_light_gray);
 }
 
 .card_3 {
   background-color: var(--Very_dark_cyan);
   border-radius: 0 var(--10px) var(--10px) 0;
 }
-.card_3 button {
+.card_3 .card_btn {
+  background-color: var(--Very_light_gray);
   color: var(--Very_dark_cyan);
 }
-.card_3 button:hover {
+.card_3 .card_btn:hover {
   background-color: var(--Very_dark_cyan);
+  color: var(--Very_light_gray);
 }
 
 /* Footer */
@@ -168,7 +174,7 @@ h1 {
 /* media queries */
 @media (max-width: 760px) {
   main {
-    max-width: 19.125rem;
+    max-width: 31.25rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -182,3 +188,4 @@ h1 {
     border-radius: 0 0 var(--10px) var(--10px);
   }
 }
+
